@@ -4,6 +4,9 @@ game 'gta5'
 
 ui_page 'html/index.html'
 
+shared_scripts {
+	'@es_extended/imports.lua',
+}
 server_script {
 	'@mysql-async/lib/MySQL.lua',
 	'server.lua'
@@ -21,4 +24,9 @@ files {
 	'html/assets/fonts/roboto/*.woff2',
 	'html/assets/fonts/justsignature/JustSignature.woff',
 	'html/assets/images/*.png'
+}
+
+dependencies {
+	'ox_lib',
+	'es_extended'
 }
